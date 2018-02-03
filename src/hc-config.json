@@ -1,0 +1,14 @@
+{
+    "general": {
+        "packageName": "HCSlugs",
+        "sequence": 0,
+        "namespace": "HoneyComb\\Slugs\\"
+    },
+    "formData": {},
+    "adminMenu": [],
+    "seeder": "",
+    "routes": [],
+    "acl": {
+        "permissions": []
+    }
+}
