@@ -4,11 +4,31 @@
         "sequence": 0,
         "namespace": "HoneyComb\\Slugs\\"
     },
-    "formData": {},
-    "adminMenu": [],
+    "formData": {
+        "slug": "HoneyComb\\Slugs\\Forms\\HCSlugForm"
+    },
+    "adminMenu": [
+        {
+            "route": "admin.slug.index",
+            "parent": "admin.index",
+            "translation": "HCSlugs::slug.page_title",
+            "icon": "leaf",
+            "aclPermission": "honey_comb_slugs_slug_list"
+        }
+    ],
     "seeder": "",
-    "routes": [],
+    "routes": [
+        "Routes\/Admin\/routes.slugs.php"
+    ],
     "acl": {
-        "permissions": []
+        "permissions": [
+            {
+                "name": "acl.slug",
+                "controller": "HoneyComb\\Slugs\\Http\\Controllers\\Admin\\HCSlugController",
+                "actions": [
+                    "honey_comb_slugs_slug_list"
+                ]
+            }
+        ]
     }
 }
