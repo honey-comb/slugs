@@ -31,6 +31,10 @@ namespace HoneyComb\Slugs\database\seeds;
 
 use Illuminate\Database\Seeder;
 
+/**
+ * Class HCSlugsSeeder
+ * @package HoneyComb\Slugs\database\seeds
+ */
 class HCSlugsSeeder extends Seeder
 {
     /**

@@ -8,6 +8,10 @@ use HoneyComb\Slugs\Models\HCSlug;
 use HoneyComb\Core\Repositories\Traits\HCQueryBuilderTrait;
 use HoneyComb\Starter\Repositories\HCBaseRepository;
 
+/**
+ * Class HCSlugRepository
+ * @package HoneyComb\Slugs\Repositories
+ */
 class HCSlugRepository extends HCBaseRepository
 {
     use HCQueryBuilderTrait;
