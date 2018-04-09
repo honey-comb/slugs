@@ -7,6 +7,8 @@ namespace HoneyComb\Slugs\Repositories;
 use HoneyComb\Slugs\Models\HCSlug;
 use HoneyComb\Core\Repositories\Traits\HCQueryBuilderTrait;
 use HoneyComb\Starter\Repositories\HCBaseRepository;
+use Illuminate\Http\Request;
+
 
 /**
  * Class HCSlugRepository
@@ -22,5 +24,10 @@ class HCSlugRepository extends HCBaseRepository
     public function model(): string
     {
         return HCSlug::class;
+    }
+
+    public function getOptions(Request $request)
+    {
+        return optimizeTranslationOptions($this->createBuilderQuery($request)->get());
     }
 }

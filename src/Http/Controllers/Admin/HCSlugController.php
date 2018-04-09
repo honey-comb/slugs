@@ -121,5 +121,16 @@ class HCSlugController extends HCBaseController
         );
     }
 
+    /**
+     * Create data list
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function getOptions(Request $request): JsonResponse
+    {
+        return response()->json(
+            $this->service->getRepository()->getOptions($request)
+        );
+    }
 
 }

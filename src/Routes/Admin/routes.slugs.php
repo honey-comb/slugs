@@ -42,8 +42,8 @@ Route::prefix(config('hc.admin_url'))
                 ->name('admin.api.slug')
                 ->middleware('acl:honey_comb_slugs_slug_admin_list');
 
-            Route::get('list', 'HCSlugController@getList')
-                ->name('admin.api.slug.list')
+            Route::get('options', 'HCSlugController@getOptions')
+                ->name('admin.api.slug.options')
                 ->middleware('acl:honey_comb_slugs_slug_admin_list');
 
         });
