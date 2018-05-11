@@ -87,7 +87,8 @@ class HCSlugController extends HCBaseController
             'url' => route('admin.api.slug'),
             'form' => route('admin.api.form-manager', ['slug']),
             'headers' => $this->getTableColumns(),
-            'actions' => $this->getActions('honey_comb_slugs_slug'),
+//            'actions' => $this->getActions('honey_comb_slugs_slug'),
+            'actions' => [],
         ];
 
         return view('HCCore::admin.service.index', ['config' => $config]);
