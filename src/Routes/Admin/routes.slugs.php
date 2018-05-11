@@ -30,13 +30,13 @@ declare(strict_types = 1);
 Route::prefix(config('hc.admin_url'))
     ->namespace('Admin')
     ->middleware(['web', 'auth'])
-    ->group(function() {
+    ->group(function () {
 
         Route::get('slug', 'HCSlugController@index')
             ->name('admin.slug.index')
             ->middleware('acl:honey_comb_slugs_slug_admin_list');
 
-        Route::prefix('api/slug')->group(function() {
+        Route::prefix('api/slug')->group(function () {
 
             Route::get('/', 'HCSlugController@getListPaginate')
                 ->name('admin.api.slug')

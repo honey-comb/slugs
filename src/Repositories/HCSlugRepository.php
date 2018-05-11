@@ -4,8 +4,8 @@ declare(strict_types = 1);
 
 namespace HoneyComb\Slugs\Repositories;
 
-use HoneyComb\Slugs\Models\HCSlug;
 use HoneyComb\Core\Repositories\Traits\HCQueryBuilderTrait;
+use HoneyComb\Slugs\Models\HCSlug;
 use HoneyComb\Starter\Repositories\HCBaseRepository;
 use Illuminate\Http\Request;
 

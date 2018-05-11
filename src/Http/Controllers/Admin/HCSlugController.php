@@ -29,10 +29,9 @@ declare(strict_types = 1);
 
 namespace HoneyComb\Slugs\Http\Controllers\Admin;
 
-use HoneyComb\Slugs\Services\HCSlugService;
-
 use HoneyComb\Core\Http\Controllers\HCBaseController;
 use HoneyComb\Core\Http\Controllers\Traits\HCAdminListHeaders;
+use HoneyComb\Slugs\Services\HCSlugService;
 use HoneyComb\Starter\Helpers\HCFrontendResponse;
 use Illuminate\Database\Connection;
 use Illuminate\Http\JsonResponse;
