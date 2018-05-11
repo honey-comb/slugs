@@ -1,5 +1,31 @@
-# slugs
+# honeycomb-slugs
+https://github.com/honey-comb/slugs
+
+## Description
 Slugs manager for HoneyComb CMS
+
+## Requirement
+
+ - php: `^7.1`
+ - laravel: `^5.6`
+ - composer
+ 
+ ## Installation
+
+Begin by installing this package through Composer.
+
+
+```js
+	{
+	    "require": {
+	        "honey-comb/slugs": "0.2.*"
+	    }
+	}
+```
+or
+```js
+    composer require honey-comb/slugs
+```
 
 ## Usage
 
