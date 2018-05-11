@@ -4,6 +4,13 @@ https://github.com/honey-comb/slugs
 ## Description
 Slugs manager for HoneyComb CMS
 
+## Attention
+
+This is part core package HoneyComb CMS package.
+
+If you want to use laravel version 5.5.* [use slug package version 0.1.*](https://github.com/honey-comb/slugs/tree/5.5 "Slugs package version 0.1.*")
+
+
 ## Requirement
 
  - php: `^7.1`
